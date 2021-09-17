@@ -1,0 +1,2 @@
+org.springframework.context.ApplicationListener=com.hcc.example.demo.config.MyApplicationListener
+org.springframework.context.ApplicationContextInitializer=com.hcc.example.demo.config.MyApplicationContextInitializer
