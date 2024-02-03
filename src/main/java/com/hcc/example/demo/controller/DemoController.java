@@ -18,13 +18,13 @@ public class DemoController {
     @Autowired
     DemoService demoService;
 
-    @Value("#{demoService}")
-    private DemoService port;
+//    @Value("#{demoService}")
+//    private DemoService port;
 
     @GetMapping(value = "/test")
     @ResponseBody
     public String test(){
-//        User info = demoService.getInfo(flag,id);
+        User info = demoService.getInfo(1,1);
 //        return JSONObject.toJSONString(info);
         return null;
     }

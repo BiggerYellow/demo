@@ -32,6 +32,7 @@ public class DataSourceAspect {
      */
     @Before("aspect()")
     public void before(JoinPoint point) {
+        logger.info("----------------aspect----------------------");
         Object[] args = point.getArgs();
         try {
             String sandBox = Integer.toString((int)args[0]);
